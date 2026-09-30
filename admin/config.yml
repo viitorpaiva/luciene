@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "conteudo"
+    label: "Conteúdo do Site"
+    files:
+      - file: "content/home.json"
+        label: "Página Inicial"
+        name: "home"
+        fields:
+          - { label: "Título do Site", name: "titulo", widget: "string" }
+          - { label: "Subtítulo / Descrição", name: "subtitulo", widget: "text" }
+          - { label: "Imagem Principal", name: "banner_img", widget: "image" }
+          - { label: "Telefone de Contato", name: "telefone", widget: "string" }
